@@ -1,0 +1,71 @@
+
+<div class="tile-body">
+    <br>
+    <br>
+    <h4 style="padding-top: 20px;">Create Users</h4>
+    
+    <form  [formGroup]="customerModel" >
+        <div class="row">
+           
+
+            <div class="form-group col-md-6">
+                <label>FirstName<span class="my_span"> *</span></label>
+                <input type="text"   formControlName="firstName"  [readOnly]="isReadOnly"
+                    name="firstName"   class="form-control" required="required"
+                    >
+
+          </div>
+          <div class="form-group col-md-6">
+            <label>LastName<span class="my_span"> *</span></label>
+            <input type="text"   formControlName="lastName"  [readOnly]="isReadOnly"
+                name="lastName"   class="form-control" required="required"
+                >
+
+      </div>
+      <div class="form-group col-md-6">
+        <label>Location<span class="my_span"> *</span></label>
+        <input type="text"   formControlName="location"  [readOnly]="isReadOnly"
+            name="location"   class="form-control" required="required"
+            >
+
+  </div>
+  <div class="form-group col-md-6">
+    <label>Password<span class="my_span"> *</span></label>
+    <input type="text"   formControlName="password"  [readOnly]="isReadOnly"
+        name="password"   class="form-control" required="required"
+        >
+
+</div>
+<div class="form-group col-md-6">
+    <label>PhoneNumber<span class="my_span"> *</span></label>
+    <input type="text"   formControlName="phoneNumber"  [readOnly]="isReadOnly"
+        name="phoneNumber"   class="form-control" required="required"
+        >
+
+</div>
+      <div class="form-group col-md-6">
+        <label>Username<span class="my_span"> *</span></label>
+        <input type="text"   formControlName="username"  [readOnly]="isReadOnly"
+            name="username"   class="form-control" required="required"
+            >
+
+  </div>
+  <div class="form-group col-md-6">
+    <label>Usertype<span class="my_span"> *</span></label>
+    <input type="text"   formControlName="usertype"  [readOnly]="isReadOnly"
+        name="usertype"   class="form-control" required="required"
+        >
+
+</div>
+
+
+            </div>
+            <div style="float: right;">
+              
+                <button  type="submit" mat-button (click)="onCreateForm()"
+                class="btn btn-info">Submit
+                </button>
+          
+              </div>
+    </form>
+    </div>

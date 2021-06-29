@@ -1,0 +1,43 @@
+
+<div class="tile-body">
+    <br>
+    <br>
+    <h4 style="padding-top: 20px;">Create plants</h4>
+    
+    <form  [formGroup]="customerModel" >
+        <div class="row">
+           
+
+            <div class="form-group col-md-6">
+                <label>Name<span class="my_span"> *</span></label>
+                <input type="text"   formControlName="name"  [readOnly]="isReadOnly"
+                    name="name"   class="form-control" required="required"
+                    >
+
+          </div>
+          <div class="form-group col-md-6">
+            <label>description<span class="my_span"> *</span></label>
+            <input type="text"   formControlName="description"  [readOnly]="isReadOnly"
+                name="description"   class="form-control" required="required"
+                >
+
+      </div>
+      <div class="form-group col-md-6">
+        <label>image<span class="my_span"> *</span></label>
+        <input type="text"   formControlName="image"  [readOnly]="isReadOnly"
+            name="image"   class="form-control" required="required"
+            >
+
+  </div>
+
+
+            </div>
+            <div style="float: right;">
+              
+                <button  type="submit" mat-button (click)="onCreateForm()"
+                class="btn btn-info">Submit
+                </button>
+          
+              </div>
+    </form>
+    </div>

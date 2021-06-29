@@ -1,0 +1,32 @@
+<div>
+    <div class="page page-dashboard">
+      <section class="tile">
+        <div class="info-title">
+          <h2>Pests</h2>
+        </div>
+        <div class="tile-body">
+          <app-functionality-buttons [addLabel]="'Create Pest'"
+                                     [addLink]="'home/cma-management/pests/create-pests'"
+                                     
+                                     [deleteLabel]="'Delete Pest'"
+                                     [endpoint]="'licence/renew/64/100'"></app-functionality-buttons>
+          <app-custom-datatable
+            [endpoint]="endpoint"
+            [hasCheckBox]="hasCheckBox"
+            [cols]="cols"
+            [idColumn]="idColumn"
+            [hasShowEntries]="true"
+            [fileName]="'Orders'"
+            [canExport]="false"
+            [filterParams]="'Name'"
+            [isFilterPresent]="true"
+            [params]="params"
+            [routeView]="routeView"
+          ></app-custom-datatable>
+        </div>
+      </section>
+    </div>
+  </div>
+  
+  
+  
